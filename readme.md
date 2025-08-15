@@ -1,4 +1,4 @@
-# POC — Sistema de Plugins Nativos em Go com `-buildmode=plugin`
+# POC  Sistema de Plugins Nativos em Go com `-buildmode=plugin`
 
 Esta POC demonstra como criar e carregar **plugins nativos em Go** usando o recurso `-buildmode=plugin`.
 A aplicação (`host`) carrega um plugin externo (`greeter`) em tempo de execução, valida compatibilidade via **ABI** e consome a interface definida em um **módulo de contrato** (`pluginapi`).
@@ -108,7 +108,7 @@ go run . --plugin ../bin/greeter_v1.so
 **Saída esperada:**
 
 ```
-2025/08/15 Plugin carregado: greeter v1.0.0 (ABI=1) — Plugin de exemplo que dá oi
+2025/08/15 Plugin carregado: greeter v1.0.0 (ABI=1)  Plugin de exemplo que dá oi
 Olá, Mundo 👋
 ```
 
@@ -123,7 +123,7 @@ Olá, Mundo 👋
   O recurso `-buildmode=plugin` não é suportado no Windows (funciona em Linux/macOS).
 
 * **Segurança**
-  O plugin roda no mesmo processo, então **não há isolamento** — bugs ou panics no plugin afetam o host.
+  O plugin roda no mesmo processo, então **não há isolamento**  bugs ou panics no plugin afetam o host.
 
 * **Quando usar**
   Ideal quando:
